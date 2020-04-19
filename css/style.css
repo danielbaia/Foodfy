@@ -1,0 +1,137 @@
+/*** RESET ****/
+
+
+/* {
+    margin: 0;
+    padding: 0;
+}*/
+
+
+/*** VARIABLE ****/
+
+:root {
+    --color-black: #111111;
+    --color-pink: #FBDFDB;
+    --color-gray: #777777;
+    --color-footer: #EEEEEE;
+    --color-footer-text: #999999;
+}
+
+body {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+
+/*** MENU ****/
+
+.menu {
+    padding: 30px 0;
+}
+
+.menu-logo {
+    display: block;
+}
+
+.menu-nav ul,
+.menu-nav li,
+.menu-nav a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-nav li {
+    display: inline-block;
+}
+
+.menu-nav a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--color-black);
+}
+
+
+/*****INTRO****/
+
+.intro {
+    background: var(--color-pink);
+    border-radius: 30px;
+    padding: 50px 50px 0 50px;
+}
+
+
+/*.intro-title {
+    padding: 117px 0 117px 60px;
+}*/
+
+.intro h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    max-width: 380px;
+    font-size: 1.125em;
+}
+
+
+/*.intro img {
+    padding: 66px 100px 0;
+}*/
+
+
+/******More Visited*****/
+
+.more-visited {
+    padding: 50px 0;
+}
+
+.more-visited h2 {
+    font-size: 1.5em;
+}
+
+
+/* .recipes {
+    margin-top: 20px;
+}
+
+.recipe-item {
+    margin-bottom: 30px;
+}
+
+.recipe-item img {
+    width: 300px; // tantando o tamanho da img aqui, ai quebra a classe da responividade
+    display: block;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}*/
+
+.recipe-item h3 {
+    font-size: 1.125em;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.recipe-item p {
+    font-size: 1.0em;
+    color: var(--color-gray);
+}
+
+
+/*****FOOTER*****/
+
+.footer-main {
+    background: var(--color-footer-text);
+}
+
+.footer-main p {
+    font-size: 0.875em;
+    text-align: center;
+    color: var(--color-footer);
+    padding: 0;
+    margin: 0;
+}
