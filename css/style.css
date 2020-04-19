@@ -15,6 +15,7 @@
     --color-gray: #777777;
     --color-footer: #EEEEEE;
     --color-footer-text: #999999;
+    --color-about-text: #444444;
 }
 
 body {
@@ -52,6 +53,11 @@ body {
     text-decoration: none;
     font-size: 1em;
     color: var(--color-black);
+}
+
+.menu-nav li a:hover {
+    color: #D54F44;
+    border-bottom: 1px solid;
 }
 
 
@@ -102,13 +108,11 @@ body {
 .recipe-item {
     margin-bottom: 30px;
 }
+*/
 
 .recipe-item img {
-    width: 300px; // tantando o tamanho da img aqui, ai quebra a classe da responividade
-    display: block;
     border-radius: 15px;
-    margin-bottom: 20px;
-}*/
+}
 
 .recipe-item h3 {
     font-size: 1.125em;
@@ -134,4 +138,22 @@ body {
     color: var(--color-footer);
     padding: 0;
     margin: 0;
+}
+
+
+/******ABOUT*****/
+
+.about h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.about h2 {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.about p {
+    color: var(--color-about-text);
+    line-height: 1.75em;
 }
