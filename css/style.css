@@ -157,3 +157,10 @@ body {
     color: var(--color-about-text);
     line-height: 1.75em;
 }
+
+
+/****RECIPES****/
+
+.recipes h1 {
+    font-size: 1.5em;
+}
