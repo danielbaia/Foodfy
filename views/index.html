@@ -1,151 +1,98 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "layout.html" %} {%block content%}
 
-
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1”>
-
-    <link href=" https://fonts.googleapis.com/css?family=Roboto&display=swap " rel="stylesheet ">
-
-    <!-- <link rel="stylesheet " href="css/bootstrap-grid.min.css "> -->
-    <link rel="stylesheet " href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css " integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh " crossorigin="anonymous ">
-    <link rel="stylesheet " href="css/style.css ">
-
-    <title>FoodFY - Paginal Inicial</title>
-
-</head>
-
-<body>
-    <header class="container-fluid ">
+<div class="mb-5 ">
+    <div class="container-fluid ">
         <div class="container ">
-            <div class="row align-items-center my-3 ">
-                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-12 ">
-                    <a href="/ " class="menu-logo ">
-                        <img src="img/logo.png " alt=" ">
-                    </a>
-                </div>
-                <div class="col-xl-10 col-lg-10 col-md-9 col-sm-12 ">
-                    <nav class="menu-nav ">
-                        <ul>
-                            <li><a href="/about ">Sobre</a></li>
-                            <li><a href="/recipes ">Receitas</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="mb-5 ">
-        <div class="container-fluid ">
-            <div class="container ">
-                <div class="intro ">
-                    <div class="row align-items-center ">
-                        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 mb-3 ">
-                            <h1>As melhores receitas</h1>
-                            <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do <br> mundo inteiro.
-                            </p>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-3 ">
-                            <img class="img-fluid " src="img/chef.png " alt=" ">
-                        </div>
+            <div class="intro ">
+                <div class="row align-items-center ">
+                    <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 mb-3 ">
+                        <h1>As melhores receitas</h1>
+                        <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do <br> mundo inteiro.
+                        </p>
                     </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <section class="mb-5 ">
-        <div class="container-fluid ">
-
-            <div class="container mb-3 ">
-                <div class="row ">
-                    <div class="col-12 ">
-                        <h2>Mais acessadas</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container ">
-
-                <div class="row ">
-
-                    <div class="col-xl-4 col-lg-4 col-md-4 mb-3 recipe-item " id="burger ">
-                        <img class="img-fluid mb-2 " src="img/burger.png " alt=" ">
-                        <h3>Tripo Bacon Burguer</h3>
-                        <p>por Jorge Relato</p>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 mb-3 recipe-item " id="pizza ">
-                        <img class="img-fluid mb-2 " src="img/pizza.png " alt=" ">
-                        <h3>Pizza 4 estacoes</h3>
-                        <p>por Fabiana Melo</p>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 mb-3 recipe-item " id="espaguete ">
-                        <img class="img-fluid mb-2 " src="img/espaguete.png " alt=" ">
-                        <h3>Espaguete ao alho</h3>
-                        <p>por Júlia Kinoto</p>
-                    </div>
-                </div>
-
-                <div class="row ">
-                    <div class="col-xl-4 col-lg-4 col-md-4 mb-3 recipe-item " id="lasanha ">
-                        <img class="img-fluid mb-2 " src="img/lasanha.png " alt=" ">
-                        <h3>Lasanha mac n'cheese</h3>
-                        <p>por Juliano Vieira</p>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 mb-3 recipe-item " id="doce ">
-                        <img class="img-fluid mb-2 " src="img/doce.png " alt=" ">
-                        <h3>Docinhos pão-do-céu</h3>
-                        <p>por Ricardo Gouveia</p>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 mb-3 recipe-item " id="asinhas ">
-                        <img class="img-fluid mb-2 " src="img/asinhas.png " alt=" ">
-                        <h3>Asinhas de frango ao barbecue</h3>
-                        <p>por Vania Steroski</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <div class="container-fluid modal-overlay ">
-        <div class="container ">
-            <div class="modal-recipe ">
-                <div class="row ">
-                    <div class="col-12 my-3 px-4 d-flex justify-content-center ">
-                        <img class="img-fluid " src=" " alt=" ">
-                    </div>
-                    <div class="col-12 my-2 ">
-                        <h3></h3>
-                        <p></p>
-                    </div>
-
-                    <div class="col-12 mb-3 d-flex justify-content-center ">
-                        <a class="btn-fechar " href=" # ">fechar janela</a>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-3 ">
+                        <img class="img-fluid " src="img/chef.png " alt=" ">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="footer-main py-4 ">
-        <div class="row ">
-            <div class="col-12 ">
-                <p>
-                    Todos os direitos reservados, receitas Foodfy.
-                </p>
+</div>
+
+<section class="mb-5 ">
+    <div class="container-fluid ">
+
+        <div class="container mb-3 ">
+            <div class="row ">
+                <div class="col-12 ">
+                    <h2>Mais acessadas</h2>
+                </div>
             </div>
         </div>
 
-        
-    </footer>
+        <div class="container ">
 
-</body>
-<script src="js/main.js "></script>
+            <div class="row ">
 
-</html>
+                <div class="col-xl-4 col-lg-4 col-md-4 mb-3 recipe-item " id="burger ">
+                    <img class="img-fluid mb-2 " src="img/burger.png " alt=" ">
+                    <h3>Tripo Bacon Burguer</h3>
+                    <p>por Jorge Relato</p>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 mb-3 recipe-item " id="pizza ">
+                    <img class="img-fluid mb-2 " src="img/pizza.png " alt=" ">
+                    <h3>Pizza 4 estacoes</h3>
+                    <p>por Fabiana Melo</p>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 mb-3 recipe-item " id="espaguete ">
+                    <img class="img-fluid mb-2 " src="img/espaguete.png " alt=" ">
+                    <h3>Espaguete ao alho</h3>
+                    <p>por Júlia Kinoto</p>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-xl-4 col-lg-4 col-md-4 mb-3 recipe-item " id="lasanha ">
+                    <img class="img-fluid mb-2 " src="img/lasanha.png " alt=" ">
+                    <h3>Lasanha mac n'cheese</h3>
+                    <p>por Juliano Vieira</p>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 mb-3 recipe-item " id="doce ">
+                    <img class="img-fluid mb-2 " src="img/doce.png " alt=" ">
+                    <h3>Docinhos pão-do-céu</h3>
+                    <p>por Ricardo Gouveia</p>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 mb-3 recipe-item " id="asinhas ">
+                    <img class="img-fluid mb-2 " src="img/asinhas.png " alt=" ">
+                    <h3>Asinhas de frango ao barbecue</h3>
+                    <p>por Vania Steroski</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<div class="container-fluid modal-overlay ">
+    <div class="container ">
+        <div class="modal-recipe ">
+            <div class="row ">
+                <div class="col-12 my-3 px-4 d-flex justify-content-center ">
+                    <img class="img-fluid " src=" " alt=" ">
+                </div>
+                <div class="col-12 my-2 ">
+                    <h3></h3>
+                    <p></p>
+                </div>
+
+                <div class="col-12 mb-3 d-flex justify-content-center ">
+                    <a class="btn-fechar " href=" # ">fechar janela</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
