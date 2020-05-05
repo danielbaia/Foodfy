@@ -100,15 +100,13 @@ body {
     font-size: 1.5em;
 }
 
-
-/* .recipes {
+.recipes {
     margin-top: 20px;
 }
 
 .recipe-item {
     margin-bottom: 30px;
 }
-*/
 
 .recipe-item {
     cursor: pointer;
@@ -132,8 +130,14 @@ body {
 
 /*****FOOTER*****/
 
+.content {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
 .footer-main {
     background: var(--color-footer-text);
+    bottom: 0;
 }
 
 .footer-main p {

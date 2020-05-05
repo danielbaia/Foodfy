@@ -1,0 +1,38 @@
+{% extends "layout.njk" %} 
+
+{% block title %}
+        <title>FoodFy - Receitas</title>
+{% endblock %}
+
+{% block content %}
+
+<section class="mb-5 ">
+    <div class="container-fluid recipes">
+
+        <div class="container mb-3 ">
+            <div class="row ">
+                <div class="col-12 recipes ">
+                    <h1>Receitas</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container ">
+
+            <div class="row ">
+
+                {% for recipe in recipes %}
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-3 recipe-item " id="{{loop.index}}">
+                        <img class="img-fluid mb-2 " src="{{recipe.image}}" alt="{{recipe.title}}">
+                        <h3>{{recipe.title}}</h3>
+                        <p>{{recipe.author}}</p>
+                    </div> 
+                {% endfor %}           
+            </div>
+
+
+    </div>
+</section>
+
+
+{% endblock %}

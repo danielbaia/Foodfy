@@ -13,7 +13,9 @@
     <link rel="stylesheet " href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css " integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh " crossorigin="anonymous ">
     <link rel="stylesheet " href="css/style.css ">
 
-    <title>FoodFY - Paginal Inicial</title>
+    {% block title %}
+        <title>FoodFY - Paginal Inicial</title>
+    {% endblock %}
 
 </head>
 
@@ -38,15 +40,18 @@
         </div>
     </header>
     
+    <div class="content">
 
     {% block content %}
 
     {% endblock %}
 
+    </div>
+
     
 
     <script src="js/main.js "></script>
-    <footer class="footer-main py-4 ">
+    <footer class="footer-main py-4 mt-5">
         <div class="row ">
             <div class="col-12 ">
                 <p>
@@ -54,11 +59,6 @@
                 </p>
             </div>
         </div>
-
-        
     </footer>
-
 </body>
-
-
 </html>
