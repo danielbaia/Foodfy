@@ -69,11 +69,6 @@ body {
     padding: 50px 50px 0 50px;
 }
 
-
-/*.intro-title {
-    padding: 117px 0 117px 60px;
-}*/
-
 .intro h1 {
     font-size: 2em;
     margin-bottom: 10px;
@@ -83,11 +78,6 @@ body {
     max-width: 380px;
     font-size: 1.125em;
 }
-
-
-/*.intro img {
-    padding: 66px 100px 0;
-}*/
 
 
 /******More Visited*****/
@@ -174,51 +164,48 @@ body {
 }
 
 
-/****MODAL****/
+/****RECIPE****/
 
-.modal-overlay {
-    background: var(--color-black);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.modal-recipe {
-    background: white;
-    width: 60%;
-    height: 60%;
-    margin: 10VH auto;
+.intro-recipe img {
     border-radius: 16px;
 }
 
-.modal-recipe img {
-    border-radius: 16px;
-}
-
-
-/**********/
-
-.modal-recipe h3 {
-    font-size: 1.5em;
-    font-weight: normal;
+.intro-recipe h1 {
+    font-size: 36px;
+    font-weight: bold;
     text-align: center;
 }
 
-.modal-recipe p {
-    font-size: 1.125em;
-    font-weight: normal;
+.intro-recipe p {
+    font-size: 20px;
     color: var(--color-gray);
     text-align: center;
 }
 
-.modal-recipe a {
-    color: var(--color-gray);
+.subtitle-recipe {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.active {
-    opacity: 1;
-    visibility: visible;
+.accordion-recipe {
+    border: none;
+    font-size: 12px;
+    color: var(--color-footer-text);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content-recipe ul {
+    padding-left: 20px;
+}
+
+.content-recipe {
+    font-size: 18px;
+    color: var(--color-about-text);
+    line-height: 28px;
+}
+
+.inactive-content {
+    display: none;
+    overflow: hidden;
 }
