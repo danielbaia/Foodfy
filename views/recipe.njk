@@ -55,7 +55,7 @@
                 <h2 class= "col-12 subtitle-recipe">Informações Adicionais <button class="accordion-recipe">Esconder</button> </h2>
                 <div class="col-12 mb-3 content-recipe">
                     <p>
-                        {{recipe.information}}
+                        {{recipe.information | replace("\n", "</br>") }}
                     </p>
                 </div>
             </div>

@@ -5,6 +5,7 @@ for (const recipe of recipes) {
 
     recipe.addEventListener('click', function() {
         const recipeID = recipe.getAttribute('id');
+
         window.location.href = `/recipes/${recipeID}`;
     })
 }
@@ -14,7 +15,6 @@ for (const recipe of recipes) {
 const acc = document.getElementsByClassName('accordion-recipe');
 
 for (let i = 0; i < acc.length; i++) {
-
 
     acc[i].addEventListener("click", function() {
         var elements = document.getElementsByClassName('content-recipe');
