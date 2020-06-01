@@ -1,6 +1,5 @@
+//Redirect for recipe
 const recipes = document.querySelectorAll('.recipe-item');
-
-
 for (const recipe of recipes) {
 
     recipe.addEventListener('click', function() {
@@ -11,9 +10,8 @@ for (const recipe of recipes) {
 }
 
 
-
+//Show and Hidden items
 const acc = document.getElementsByClassName('accordion-recipe');
-
 for (let i = 0; i < acc.length; i++) {
 
     acc[i].addEventListener("click", function() {
@@ -26,7 +24,6 @@ for (let i = 0; i < acc.length; i++) {
             elements[i].classList.add('inactive-content');
             acc[i].innerHTML = "Mostrar";
         }
-
     });
 
 }

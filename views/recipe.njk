@@ -6,61 +6,50 @@
 
 {% block content %}
 
-<div class="container-fluid">
-    <div class="container mb-3 intro-recipe">
-        <div class="row ">
-            <div class="col-12 mb-3">
+
+
+<section class="recipe">
+
+    <div class="intro-recipe">
+            <div>
                 <img class="img-fluid mx-auto d-block" src="{{recipe.image}}" alt=" ">
             </div>
             <h1 class="col-12">{{recipe.title}}</h1>
             <p class="col-12">{{recipe.author}}</p>
+    </div>
+  
+    <div>
+        <h2 class= "subtitle-recipe">Ingredientes <button class="accordion-recipe">Esconder</button> </h2>
+            <div class="content-recipe">
+                <ul>
+                    {% for item in recipe.ingredients %}
+                        <li> {{item}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+    </div>
+
+    <div>
+        <h2 class= "col-12 subtitle-recipe">Modo de preparo <button class="accordion-recipe">Esconder</button>  </h2>
+        <div class="col-12 mb-3 content-recipe">
+            <p>
+                {% for prep in recipe.preparation %}
+                    {{prep}} </br>
+                {% endfor %}
+            </p>
         </div>
     </div>
-</div>
-
-<section class="mb-5 py-5">
-    <div class="container-fluid">
-        <div class="container mb-2 ">
-            <div class="row ">
-                <h2 class= "col-12 subtitle-recipe">Ingredientes <button class="accordion-recipe">Esconder</button> </h2>
-                <div class="col-12 mb-3 content-recipe">
-                    <ul>
-                        {% for item in recipe.ingredients %}
-                            <li> {{item}}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
 
 
-
-        <div class="container mb-2 ">
-            <div class="row ">
-                <h2 class= "col-12 subtitle-recipe">Modo de preparo <button class="accordion-recipe">Esconder</button>  </h2>
-                <div class="col-12 mb-3 content-recipe">
-                    <p>
-                        {% for prep in recipe.preparation %}
-                            {{prep}} </br>
-                        {% endfor %}
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="container mb-5 ">
-            <div class="row ">
-                <h2 class= "col-12 subtitle-recipe">Informações Adicionais <button class="accordion-recipe">Esconder</button> </h2>
-                <div class="col-12 mb-3 content-recipe">
-                    <p>
-                        {{recipe.information | replace("\n", "</br>") }}
-                    </p>
-                </div>
-            </div>
+    <div>
+        <h2 class= "subtitle-recipe">Informações Adicionais <button class="accordion-recipe">Esconder</button> </h2>
+        <div class="content-recipe">
+            <p>
+                {{recipe.information | replace("\n", "</br>") }}
+            </p>
         </div>
     </div>
+
 </section>
 
 {% endblock %}
