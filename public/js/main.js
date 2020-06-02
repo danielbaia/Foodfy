@@ -15,13 +15,13 @@ const acc = document.getElementsByClassName('accordion-recipe');
 for (let i = 0; i < acc.length; i++) {
 
     acc[i].addEventListener("click", function() {
-        var elements = document.getElementsByClassName('content-recipe');
+        var items = document.getElementsByClassName('content-recipe');
 
-        if (elements[i].classList.contains('inactive-content')) {
-            elements[i].classList.remove('inactive-content');
+        if (items[i].classList.contains('inactive')) {
+            items[i].classList.remove('inactive');
             acc[i].innerHTML = "Esconder";
         } else {
-            elements[i].classList.add('inactive-content');
+            items[i].classList.add('inactive');
             acc[i].innerHTML = "Mostrar";
         }
     });

@@ -1,6 +1,6 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
-const recipes = require('./data');
+const recipes = require('./data2');
 
 
 const server = express();

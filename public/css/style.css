@@ -268,7 +268,7 @@ br {
     line-height: 28px;
 }
 
-.inactive-content {
+.inactive {
     display: none;
     overflow: hidden;
 }
