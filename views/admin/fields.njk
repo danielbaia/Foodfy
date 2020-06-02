@@ -1,0 +1,27 @@
+<div>
+    <label for="img_url">Imagem da receita </label>
+    <input type="url" name="img_url" id="img_url">
+</div>
+
+<div>
+    <label for="ingredients">Ingredientes </label>  
+    <div id="ingredients">
+        <input class="ingredient" type="text" name="ingredients[]">
+    </div>
+    <button class="btn-add btn-ingredient">Adicionar novo ingrediente</button>
+</div>
+
+<div>
+    <label for="preparation">Modo de Preparo </label>
+    <div id="preparations">
+        <input type="text" name="preparation[]">
+    </div>   
+    <button class="btn-add">Adicionar novo passo</button>
+</div>
+
+<div>
+    <label for="information">Informações Adicionais </label>
+    <textarea type="textarea" name="information" id="information"></textarea>
+</div>
+
+<button class="btn-save" type="submit">Salvar Receita</button>

@@ -27,3 +27,29 @@ for (let i = 0; i < acc.length; i++) {
     });
 
 }
+
+//add ingredients
+
+function addIngredients() {
+
+    console.log("to aqui");
+    const ingredients = document.querySelector("#ingredients");
+    const fieldcontainer = document.querySelectorAll(".ingredient");
+
+    const newField = fieldcontainer[fieldcontainer.length - 1].cloneNode(true);
+
+    if (newField.children[0].value == "") {
+        return false;
+    }
+
+    //deixa o valor do input vazio
+    newField.children[0].value = "";
+    ingredients.appendChild(newField);
+
+}
+
+
+
+document.querySelector(".btn-ingredient").addEventListener("click", function() {
+    console.log("to aqui");
+});

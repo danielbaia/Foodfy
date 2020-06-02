@@ -272,3 +272,72 @@ br {
     display: none;
     overflow: hidden;
 }
+
+
+/*ADMIN*/
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.header-admin {
+    background: black;
+}
+
+.form-recipe {
+    position: relative;
+}
+
+.form-recipe>div {
+    margin-top: 30px;
+}
+
+.form-recipe label {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.form-recipe input {
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 1.125em;
+    padding: 8px 16px;
+    margin-top: 8px;
+}
+
+.form-recipe textarea {
+    width: 100%;
+    height: 260px;
+    margin-top: 8px;
+    display: block;
+    font-family: 'Roboto-Regular', sans-serif;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+}
+
+.btn-add {
+    border: none;
+    background: none;
+    margin-top: 8px;
+    font-size: 1em;
+    color: #6558C3;
+    text-align: right;
+    font-weight: bold;
+}
+
+.btn-save {
+    background: #6558C3;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
