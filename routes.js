@@ -34,6 +34,7 @@ routes.get("/admin/recipes", admin.index);
 routes.get("/admin/recipes/create", admin.create);
 routes.post("/admin/recipes", admin.post);
 routes.get("/admin/recipes/:id/edit", admin.edit);
+routes.put("/admin/recipes", admin.put);
 
 
 

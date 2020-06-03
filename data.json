@@ -1,32 +1,22 @@
 {
-    "recipes": [{
-            "img_url": "http://google.com",
-            "ingredients": [
-                "teste"
-            ],
-            "preparation": [
-                "teste"
-            ],
-            "information": "akjldajldajldjoeijsofjsofj",
-            "id": 1
-        },
-        {
-            "img_url": "http://google.com",
-            "title": "Feijao com arroz",
-            "author": "Daniel Amaral",
-            "ingredients": [
-                "ingredient 1",
-                "Ingredient 2",
-                "ingredient 3",
-                ""
-            ],
-            "preparation": [
-                "Passo 1",
-                "Passo 2",
-                ""
-            ],
-            "information": "Pldadal slfnsld flsndfl v,x ,vnsldv s, c,v sld v, xc,v s,dv ks v,x vsdk vksd v,sd vksd vks vksd vks \r\ndkajsldkjalkdjlsflsdnflsdnlv sl\r\nsalkdjaldjlakjflksdjfldjfksdjfl\r\nakjsdlajdlajdlkjlnvmsn,vnxcl\r\nalskd;lad;as;da;d\r\naks;dka;dka;dkasdlk\r\nndsandlakdlajdlas\r\nkasjdlajdlajljdflsf\r\nlskjdlsfjldfjsldfjls\r\nkljsldfjslfjsdlf",
-            "id": 2
-        }
-    ]
+  "recipes": [
+    {
+      "img_url": "http://google.com",
+      "title": "Edit 3",
+      "author": "Daniel Edit 2",
+      "ingredients": [
+        "ingredient 1 edit",
+        "Ingredient 2 edit",
+        "ingredient 3 edit",
+        "edit"
+      ],
+      "preparation": [
+        "Passo 1 edit",
+        "Passo 2 edit",
+        "edit"
+      ],
+      "information": "edit\r\nedit\r\nedit\r\nediteditveditediteditediteditedit\r\nediteditv\r\nediteditedit\r\neditedit\r\nediteditedit",
+      "id": 2
+    }
+  ]
 }
