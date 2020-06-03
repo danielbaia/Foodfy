@@ -28,8 +28,6 @@ for (let i = 0; i < acc.length; i++) {
 
 }
 
-//add ingredients
-
 function addIngredients() {
 
     const ingredients = document.querySelector("#ingredients");
@@ -47,7 +45,6 @@ function addIngredients() {
     ingredients.appendChild(newField);
 
 }
-
 
 function addPreparations() {
 

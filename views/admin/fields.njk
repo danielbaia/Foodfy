@@ -1,12 +1,30 @@
 <div>
     <label for="img_url">Imagem da receita </label>
-    <input type="url" name="img_url" id="img_url">
+    <input type="url" name="img_url" id="img_url" value="{{recipe.img_url}}">
+</div>
+
+<div>
+    <label for="title">Nome da receita </label>  
+    <input type="text" name="title" value="{{recipe.title}}"">
+</div>
+
+<div>
+    <label for="author">Autor da receita </label>  
+    <input type="text" name="author" value="{{recipe.author}}">
 </div>
 
 <div>
     <label for="ingredients">Ingredientes </label>  
     <div id="ingredients">
-        <input class="ingredient" type="text" name="ingredients[]">
+
+        {% for ingredient in recipe.ingredients %}
+            <input class="ingredient" type="text" name="ingredients[]" value="{{ingredient}}">
+
+        {% else %}
+            <input class="ingredient" type="text" name="ingredients[]" value="{{ingredient}}">
+        
+        {% endfor %}
+        
     </div>
     <button class="add-ingredient" type="button">Adicionar novo ingrediente</button>
 </div>
@@ -14,14 +32,20 @@
 <div>
     <label for="preparation">Modo de Preparo </label>
     <div id="preparations">
-        <input class="preparation" type="text" name="preparation[]">
+
+        {% for preparation in recipe.preparation %}
+            <input class="preparation" type="text" name="preparation[]" value="{{preparation}}">
+        {% else %}
+            <input class="preparation" type="text" name="preparation[]" value="{{preparation}}">
+        {% endfor %}
+
     </div>   
     <button class="add-preparation" type="button">Adicionar novo passo</button>
 </div>
 
 <div>
     <label for="information">Informações Adicionais </label>
-    <textarea type="textarea" name="information" id="information"></textarea>
+    <textarea type="textarea" name="information">{{recipe.information}}</textarea>
 </div>
 
 <button class="btn-save" type="submit">Salvar Receita</button>
