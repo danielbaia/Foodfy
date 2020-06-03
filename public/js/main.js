@@ -32,24 +32,38 @@ for (let i = 0; i < acc.length; i++) {
 
 function addIngredients() {
 
-    console.log("to aqui");
     const ingredients = document.querySelector("#ingredients");
     const fieldcontainer = document.querySelectorAll(".ingredient");
 
     const newField = fieldcontainer[fieldcontainer.length - 1].cloneNode(true);
 
-    if (newField.children[0].value == "") {
+    //verifica se o campo anterior está vazio
+    if (newField.value == "") {
         return false;
     }
 
     //deixa o valor do input vazio
-    newField.children[0].value = "";
+    newField.value = "";
     ingredients.appendChild(newField);
 
 }
 
 
+function addPreparations() {
 
-document.querySelector(".btn-ingredient").addEventListener("click", function() {
-    console.log("to aqui");
-});
+    const preparations = document.querySelector("#preparations");
+    const fieldContainer = document.querySelectorAll(".preparation");
+
+    const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
+
+    if (newField.value == "") {
+        return false;
+    }
+
+    newField.value = "";
+    preparations.appendChild(newField);
+
+}
+
+document.querySelector(".add-ingredient").addEventListener("click", addIngredients);
+document.querySelector(".add-preparation").addEventListener("click", addPreparations);

@@ -320,7 +320,8 @@ br {
     border: 1px solid #dddddd;
 }
 
-.btn-add {
+.add-ingredient,
+.add-preparation {
     border: none;
     background: none;
     margin-top: 8px;
