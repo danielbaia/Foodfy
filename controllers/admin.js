@@ -103,3 +103,26 @@ exports.put = function(req, res) {
 
     return res.redirect("/admin/recipes")
 }
+
+exports.delete = function(req, res) {
+
+    const { id } = req.body;
+    let index;
+
+    const recipesFiltered = data.recipes.filter(function(recipe) {
+        return recipe.id != id;
+    })
+
+    data.recipes = recipesFiltered;
+
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+
+        if (err) res.send("Write file error...");
+
+        return res.redirect("/admin/recipes");
+    });
+
+
+
+}

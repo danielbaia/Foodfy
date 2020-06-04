@@ -6,23 +6,26 @@
 
 {% block content%}
 <section class="container">
-    
+    <div class="form-recipe">
+        <form class="form-edit" action="/admin/recipes?_method=PUT" method="POST">
 
-    <form class="form-recipe" action="/admin/recipes?_method=PUT" method="POST">
+            <h1> Editar Receita </h1>
 
-        <h1> Editar Receita </h1>
+            {% include 'admin/fields.njk'%}
 
-        {% include 'admin/fields.njk'%}
+            <input type="hidden" name="id" value="{{recipe.id}}">
 
-        <input type="hidden" name="id" value="{{recipe.id}}">
+        </form>
 
-    </form>
+        <form class="form-delete" action="/admin/recipes?_method=DELETE" method="POST">
 
-    <form action="/admin/recipes?_method=DELETE" method="POST">
+            <button class="btn-delete" type="submit">Excluir</button>
+             <input type="hidden" name="id" value="{{recipe.id}}">
+        
+        </form>
+    </div>
 
-        <button class="btn-delete" type="submit">Excluir</button>
-    
-    </form>
+
 
 </section>
 

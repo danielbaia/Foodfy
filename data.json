@@ -1,22 +1,3 @@
 {
-  "recipes": [
-    {
-      "img_url": "http://google.com",
-      "title": "Edit 3",
-      "author": "Daniel Edit 2",
-      "ingredients": [
-        "ingredient 1 edit",
-        "Ingredient 2 edit",
-        "ingredient 3 edit",
-        "edit"
-      ],
-      "preparation": [
-        "Passo 1 edit",
-        "Passo 2 edit",
-        "edit"
-      ],
-      "information": "edit\r\nedit\r\nedit\r\nediteditveditediteditediteditedit\r\nediteditv\r\nediteditedit\r\neditedit\r\nediteditedit",
-      "id": 2
-    }
-  ]
+  "recipes": []
 }
