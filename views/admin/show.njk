@@ -1,0 +1,59 @@
+{% extends 'admin/layout.njk' %}
+
+{% block title %}
+    <title>Admin</title>
+{% endblock %}
+
+
+{% block content %}
+<section class="recipe">
+
+    <div class="header-recipe">
+        <h1>Receita: {{recipe.title}}</h1>
+        <a class= "btn-edit" href="/admin/recipes/{{recipe.id}}/edit"> Editar Receita </a>
+    
+    </div>
+
+    <div class="intro-recipe">
+            <div>
+                <img class="" src="{{recipe.img_url}}" alt=" ">
+            </div>
+            <h1>{{recipe.title}}</h1>
+            <p>{{recipe.author}}</p>
+    </div>
+  
+    <div>
+        <h2 class= "subtitle-recipe">Ingredientes <button class="accordion-recipe">Esconder</button> </h2>
+            <div class="content-recipe">
+                <ul>
+                    {% for item in recipe.ingredients %}
+                        <li> - {{item}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+    </div>
+
+    <div>
+        <h2 class= "subtitle-recipe">Modo de preparo <button class="accordion-recipe">Esconder</button>  </h2>
+        <div class="content-recipe">
+            <p>
+                {% for prep in recipe.preparation %}
+                    - {{prep}} </br>
+                {% endfor %}
+            </p>
+        </div>
+    </div>
+
+
+    <div>
+        <h2 class= "subtitle-recipe">Informações Adicionais <button class="accordion-recipe">Esconder</button> </h2>
+        <div class="content-recipe">
+            <p>
+                {{recipe.information | replace("\n", "</br>") }}
+            </p>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
