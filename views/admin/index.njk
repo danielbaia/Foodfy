@@ -4,4 +4,27 @@
     <title>Admin</title>
 {% endblock %}
 
+{% block content %}
+
+<section class="container">
+    <h1 class="admin-titulo">Gerenciar Receitas</h1>
+    <div class="recipes-admin">
+
+        {% for recipe in recipes %}
+            <div class="item">
+                 
+                    <div class="item-img">
+                        <img src="{{recipe.img_url}}" alt="">
+                    </div>
+                    <h2>{{recipe.title}}</h2>
+                    <p>por {{recipe.author}}</p>
+                    <a href="/admin/recipes/{{recipe.id}}">Visualizar</a>
+            </div>
+        {% endfor %}
+
+    </div>
+</section>
+
+{% endblock %}
+
 

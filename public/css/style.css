@@ -381,3 +381,54 @@ br {
     font-size: 1.5em;
     font-weight: bold;
 }
+
+
+/*INDEX*/
+
+.recipes-admin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.admin-titulo {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 172px auto;
+}
+
+.item-img {
+    grid-row: span 5;
+}
+
+.item h2 {
+    font-size: 1.125em;
+    font-weight: normal;
+    color: var(--color-black);
+}
+
+.item h2,
+.item p {
+    padding: 0 16px 4px 8px;
+}
+
+.item p {
+    font-size: 0.875em;
+    color: var(--color-footer-text);
+}
+
+.item-img img {
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.item a {
+    padding-left: 8px;
+    font-size: 0.875em;
+    color: #6558C3;
+    font-weight: bold;
+}
